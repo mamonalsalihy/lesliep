@@ -1,7 +1,12 @@
 .grid-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 20px;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  width: 100%;
+  max-width: 500px; /* Adjust as needed for standard image size */
+  height: auto;
+  gap: 10px;
+  margin: 0 auto;
 }
 
 .grid-item {
