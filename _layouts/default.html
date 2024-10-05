@@ -6,12 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     {% seo %}
-    <link rel="stylesheet" href="{{ "/assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}">
+    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
     <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
     <![endif]-->
     {% include head-custom.html %}
-    
   </head>
   <body>
     <div class="wrapper">
@@ -29,42 +28,9 @@
         {% if site.github.is_user_page %}
         <p class="view"><a href="{{ site.github.owner_url }}">View My GitHub Profile</a></p>
         {% endif %}
-
       </header>
       <section>
-        <div class="about-us">
-          <h2>About Us</h2>
-          <p>Welcome to Delightful Bakes! We are a small, family-run bakery dedicated to bringing you the freshest, most delicious baked goods made with love. Our passion for baking comes through in every treat, from our flaky croissants to our rich, decadent cakes. We believe in using only the finest ingredients to create products that not only taste amazing but also bring joy to our customers' lives.</p>
-        </div>
-        <div class="order-online">
-          <h2>Order Online</h2>
-          <p>Craving something sweet? Place your order online and enjoy our handmade treats delivered right to your door!</p>
-          <p><a href="/order" class="order-link">Order Now</a></p>
-        </div>
-        <div class="testimonials">
-          <h2>Testimonials</h2>
-          <blockquote>
-            <p>"The best bakery in town! The cakes are always so fresh and flavorful."</p>
-            <footer>&mdash; Jane D.</footer>
-          </blockquote>
-          <blockquote>
-            <p>"I can't get enough of their croissants! They remind me of my trips to France."</p>
-            <footer>&mdash; Mark R.</footer>
-          </blockquote>
-          <blockquote>
-            <p>"Delightful Bakes made my wedding cake, and it was absolutely perfect! Thank you!"</p>
-            <footer>&mdash; Emily S.</footer>
-          </blockquote>
-        </div>
-        <div class="gallery">
-          <h2>Our Creations</h2>
-          <div class="grid-container">
-            <img src="{{ "/assets/images/bakery-item-1.jpg" | relative_url }}" alt="Delicious croissants" class="grid-item" />
-            <img src="{{ "/assets/images/bakery-item-2.jpg" | relative_url }}" alt="Chocolate-covered strawberries" class="grid-item" />
-            <img src="{{ "/assets/images/bakery-item-3.jpg" | relative_url }}" alt="Freshly baked sourdough bread" class="grid-item" />
-            <img src="{{ "/assets/images/bakery-item-4.jpg" | relative_url }}" alt="Colorful cupcakes" class="grid-item" />
-          </div>
-        </div>
+        {{ content }}
       </section>
       <footer>
         <div class="contact-info">
