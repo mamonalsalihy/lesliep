@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delightful Bakes by [Your Girlfriend's Name]</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+        <div class="hero-content">
+            <img src="images/hero-image.jpg" alt="[Your Girlfriend's Name] holding freshly baked goods" class="hero-image">
+            <h1>Welcome to Delightful Bakes</h1>
+            <p>Handcrafted treats made with love, for every occasion.</p>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery-section">
+        <h2>Our Baked Creations</h2>
+        <div class="gallery-container">
+            <div class="slide-container">
+                <div class="slides">
+                    <img src="images/bake1.jpg" alt="Cupcakes">
+                    <img src="images/bake2.jpg" alt="Croissants">
+                    <img src="images/bake3.jpg" alt="Custom Cake">
+                    <img src="images/bake4.jpg" alt="Cookies">
+                    <img src="images/bake5.jpg" alt="Macarons">
+                </div>
+            </div>
+            <div class="gallery-nav">
+                <button class="prev">&#10094;</button>
+                <button class="next">&#10095;</button>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+/* styles.css */
+.hero-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f7e9dc;
+    padding: 50px;
+    text-align: center;
+}
+.hero-image {
+    border-radius: 50%;
+    max-width: 200px;
+    margin-bottom: 20px;
+}
+.gallery-section {
+    padding: 40px;
+}
+.gallery-container {
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+.slides img {
+    min-width: 100%;
+    height: auto;
+}
+.gallery-nav {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+.prev, .next {
+    background: rgba(0,0,0,0.5);
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
