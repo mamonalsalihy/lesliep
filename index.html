@@ -1,70 +1,41 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Delightful Bakes</title>
-    <link rel="stylesheet" href="{{ "/assets/css/style.css" | relative_url }}">
-</head>
-<body>
-    <div class="wrapper">
-        <header>
-            <h1>Delightful Bakes</h1>
-            <img src="assets/images/owner-holding-baked-good.jpg" alt="Owner holding a delicious baked treat" class="owner-photo" />
-            <p>Handmade delights to bring sweetness to your day</p>
-        </header>
+---
+layout: default
+title: Delightful Bakes
+---
 
-        <section>
-            <h2>Our Creations</h2>
-            <div class="gallery">
-                <div class="grid-container">
-                    <img src="assets/images/bakery-item-1.jpg" alt="Delicious croissants" class="grid-item" />
-                    <img src="assets/images/bakery-item-2.jpg" alt="Chocolate-covered strawberries" class="grid-item" />
-                    <img src="assets/images/bakery-item-3.jpg" alt="Freshly baked sourdough bread" class="grid-item" />
-                    <img src="assets/images/bakery-item-4.jpg" alt="Colorful cupcakes" class="grid-item" />
-                </div>
-            </div>
-        </section>
+<div class="about-us">
+  <h2>About Us</h2>
+  <p>Welcome to Delightful Bakes! We are a small, family-run bakery dedicated to bringing you the freshest, most delicious baked goods made with love. Our passion for baking comes through in every treat, from our flaky croissants to our rich, decadent cakes. We believe in using only the finest ingredients to create products that not only taste amazing but also bring joy to our customers' lives.</p>
+</div>
 
-        <section>
-            <h2>About Us</h2>
-            <p>Welcome to Delightful Bakes! We are a small, family-owned bakery passionate about creating handmade, delicious baked goods for every occasion. Our mission is to bring a little bit of sweetness into your life, one treat at a time. All of our products are made with love, using the finest ingredients to ensure the highest quality and taste.</p>
-        </section>
+<div class="order-online">
+  <h2>Order Online</h2>
+  <p>Craving something sweet? Place your order online and enjoy our handmade treats delivered right to your door!</p>
+  <p><a href="/order" class="order-link">Order Now</a></p>
+</div>
 
-        <section>
-            <h2>Contact Us</h2>
-            <p>If you have any questions, special requests, or would like to place an order, we'd love to hear from you! Please use the contact information below:</p>
-            <ul>
-                <li>Email: <a href="mailto:contact@delightfulbakes.com">contact@delightfulbakes.com</a></li>
-                <li>Phone: <a href="tel:+1234567890">+1 (234) 567-890</a></li>
-                <li>Address: 123 Bakery Lane, Sweetville, CA 91000</li>
-            </ul>
-        </section>
+<div class="testimonials">
+  <h2>Testimonials</h2>
+  <blockquote>
+    <p>"The best bakery in town! The cakes are always so fresh and flavorful."</p>
+    <footer>&mdash; Jane D.</footer>
+  </blockquote>
+  <blockquote>
+    <p>"I can't get enough of their croissants! They remind me of my trips to France."</p>
+    <footer>&mdash; Mark R.</footer>
+  </blockquote>
+  <blockquote>
+    <p>"Delightful Bakes made my wedding cake, and it was absolutely perfect! Thank you!"</p>
+    <footer>&mdash; Emily S.</footer>
+  </blockquote>
+</div>
 
-        <section>
-            <h2>Order Online</h2>
-            <p>We offer a variety of cakes, pastries, and treats available for online ordering. Please visit our <a href="order.html">Order Page</a> to see our full menu and place an order for pickup or delivery.</p>
-        </section>
-
-        <section>
-            <h2>Testimonials</h2>
-            <div class="testimonials">
-                <blockquote>
-                    "The best cupcakes I've ever had! Thank you for making our celebration extra special!" - Sarah L.
-                </blockquote>
-                <blockquote>
-                    "Amazing bakery with incredible treats. The sourdough bread is out of this world!" - John D.
-                </blockquote>
-                <blockquote>
-                    "Beautifully decorated cakes that taste even better than they look. Highly recommend!" - Emily R.
-                </blockquote>
-            </div>
-        </section>
-
-        <footer>
-            <p><small>Hosted on GitHub Pages &mdash; Theme by Delightful Bakes</small></p>
-        </footer>
-    </div>
-    <script src="assets/js/gallery-slider.js"></script>
-</body>
-</html>
+<div class="gallery">
+  <h2>Our Creations</h2>
+  <div class="grid-container">
+    <img src="{{ '/assets/images/bakery-item-1.jpg' | relative_url }}" alt="Delicious croissants" class="grid-item" />
+    <img src="{{ '/assets/images/bakery-item-2.jpg' | relative_url }}" alt="Chocolate-covered strawberries" class="grid-item" />
+    <img src="{{ '/assets/images/bakery-item-3.jpg' | relative_url }}" alt="Freshly baked sourdough bread" class="grid-item" />
+    <img src="{{ '/assets/images/bakery-item-4.jpg' | relative_url }}" alt="Colorful cupcakes" class="grid-item" />
+  </div>
+</div>
