@@ -31,54 +31,46 @@
 
       </header>
       <section>
-        <h2>Our Gallery</h2>
-        <div class="gallery">
-          <div class="gallery-slider">
-            <img src="{{ "/assets/images/bakery-item-1.jpg" | relative_url }}" alt="Delicious croissants" />
-            <img src="{{ "/assets/images/bakery-item-2.jpg" | relative_url }}" alt="Chocolate-covered strawberries" />
-            <img src="{{ "/assets/images/bakery-item-3.jpg" | relative_url }}" alt="Freshly baked sourdough bread" />
-            <img src="{{ "/assets/images/bakery-item-4.jpg" | relative_url }}" alt="Colorful cupcakes" />
-            <img src="{{ "/assets/images/bakery-item-5.jpg" | relative_url }}" alt="Seasonal pies" />
-          </div>
+        <div class="about-us">
+          <h2>About Us</h2>
+          <p>Welcome to Delightful Bakes! We are a small, family-run bakery dedicated to bringing you the freshest, most delicious baked goods made with love. Our passion for baking comes through in every treat, from our flaky croissants to our rich, decadent cakes. We believe in using only the finest ingredients to create products that not only taste amazing but also bring joy to our customers' lives.</p>
         </div>
-      </section>
-
-      <section>
-        <h2>About Us</h2>
-        <p>Welcome to Delightful Bakes! We are a small, family-owned bakery passionate about creating handmade, delicious baked goods for every occasion. Our mission is to bring a little bit of sweetness into your life, one treat at a time. All of our products are made with love, using the finest ingredients to ensure the highest quality and taste.</p>
-      </section>
-
-      <section>
-        <h2>Contact Us</h2>
-        <p>If you have any questions, special requests, or would like to place an order, we'd love to hear from you! Please use the contact information below:</p>
-        <ul>
-          <li>Email: <a href="mailto:contact@delightfulbakes.com">contact@delightfulbakes.com</a></li>
-          <li>Phone: <a href="tel:+1234567890">+1 (234) 567-890</a></li>
-          <li>Address: 123 Bakery Lane, Sweetville, CA 91000</li>
-        </ul>
-      </section>
-
-      <section>
-        <h2>Order Online</h2>
-        <p>We offer a variety of cakes, pastries, and treats available for online ordering. Please visit our <a href="{{ "/order" | relative_url }}">Order Page</a> to see our full menu and place an order for pickup or delivery.</p>
-      </section>
-
-      <section>
-        <h2>Testimonials</h2>
+        <div class="order-online">
+          <h2>Order Online</h2>
+          <p>Craving something sweet? Place your order online and enjoy our handmade treats delivered right to your door!</p>
+          <p><a href="/order" class="order-link">Order Now</a></p>
+        </div>
         <div class="testimonials">
+          <h2>Testimonials</h2>
           <blockquote>
-            "The best cupcakes I've ever had! Thank you for making our celebration extra special!" - Sarah L.
+            <p>"The best bakery in town! The cakes are always so fresh and flavorful."</p>
+            <footer>&mdash; Jane D.</footer>
           </blockquote>
           <blockquote>
-            "Amazing bakery with incredible treats. The sourdough bread is out of this world!" - John D.
+            <p>"I can't get enough of their croissants! They remind me of my trips to France."</p>
+            <footer>&mdash; Mark R.</footer>
           </blockquote>
           <blockquote>
-            "Beautifully decorated cakes that taste even better than they look. Highly recommend!" - Emily R.
+            <p>"Delightful Bakes made my wedding cake, and it was absolutely perfect! Thank you!"</p>
+            <footer>&mdash; Emily S.</footer>
           </blockquote>
         </div>
       </section>
-
       <footer>
+        <div class="contact-info">
+          <h2>Contact Us</h2>
+          <p>Email: <a href="mailto:info@delightfulbakes.com">info@delightfulbakes.com</a></p>
+          <p>Phone: <a href="tel:+1234567890">+1 234 567 890</a></p>
+          <p>Address: 123 Sweet Street, Bakery Town, CA 94016</p>
+        </div>
+        <div class="social-media">
+          <h2>Follow Us</h2>
+          <ul>
+            <li><a href="https://facebook.com/delightfulbakes" target="_blank">Facebook</a></li>
+            <li><a href="https://instagram.com/delightfulbakes" target="_blank">Instagram</a></li>
+            <li><a href="https://twitter.com/delightfulbakes" target="_blank">Twitter</a></li>
+          </ul>
+        </div>
         {% if site.github.is_project_page %}
         <p>This project is maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></p>
         {% endif %}
